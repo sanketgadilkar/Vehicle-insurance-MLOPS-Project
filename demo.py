@@ -17,11 +17,27 @@
 #     logging.info(e)
 #     raise MyException(e, sys) from e
 
-from src.pipline.training_pipeline import TrainPipeline
-# import os
-pipline = TrainPipeline()
-pipline.run_pipeline()
-# from src.constants import MONGODB_URL_KEY
+# from src.pipline.prediction_pipeline import VehicleData
+# from src.pipline.prediction_pipeline import VehicleDataClassifier
+
+
+# vehicle_data = VehicleData(1,23,1,28,1,30000,26,100,1,0,1)
+
+# # data = vehicle_data.get_vehicle_data_as_dict()
+
+# data = vehicle_data.get_vehicle_input_data_frame()
+
+# pred = VehicleDataClassifier()
+
+# results = pred.predict(data)
+
+# print(results)
+
+# pipline = TrainPipeline()
+# pipline.run_pipeline()
+# # from src.constants import MONGODB_URL_KEY
+
+# from s
 
 
 # # print(os.getenv(MONGODB_URL_KEY).strip())
