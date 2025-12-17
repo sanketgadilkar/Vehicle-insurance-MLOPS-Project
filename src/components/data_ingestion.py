@@ -2,6 +2,7 @@ import os
 import sys
 
 from pandas import DataFrame
+import pandas as pd
 from sklearn.model_selection import train_test_split
 
 from src.entity.config_entity import DataIngestionConfig
