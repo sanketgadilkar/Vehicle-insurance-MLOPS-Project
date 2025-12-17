@@ -9,7 +9,7 @@ from uvicorn import run as app_run
 from typing import Optional
 
 # Importing constants and pipeline modules from the project
-
+from src.constants import APP_HOST, APP_PORT
 from src.pipline.prediction_pipeline import VehicleData, VehicleDataClassifier
 from src.pipline.training_pipeline import TrainPipeline
 
@@ -140,3 +140,6 @@ async def predictRouteClient(request: Request):
     except Exception as e:
         return {"status": False, "error": f"{e}"}
 
+# Main entry point to start the FastAPI server
+if __name__ == "__main__":
+    app_run(app, host=APP_HOST, port=APP_PORT)
